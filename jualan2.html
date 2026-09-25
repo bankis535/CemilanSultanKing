@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan RT05 - Camilan & Minuman Premium</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding-bottom: 50px;
+        }
+        header {
+            background: linear-gradient(145deg, #1f1f1f, #0a0a0a);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid #d4af37;
+        }
+        header h1 {
+            color: #d4af37;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        header p {
+            color: #b3b3b3;
+            font-size: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            color: #d4af37;
+            margin: 20px 0 15px 0;
+            border-left: 3px solid #d4af37;
+            padding-left: 10px;
+            font-size: 1.5rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        @media(min-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .product-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+        }
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .product-title {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .product-price {
+            font-size: 1.2rem;
+            color: #d4af37;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .wa-number {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .btn-order {
+            display: block;
+            background-color: #d4af37;
+            color: #121212;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: auto;
+            transition: background 0.3s;
+        }
+        .btn-order:hover {
+            background-color: #fff;
+        }
+        .info-box {
+            background-color: #1a1a1a;
+            border-left: 4px solid #d4af37;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 0 12px 12px 0;
+        }
+        .info-box h3 {
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+        .info-box p {
+            color: #b3b3b3;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sultan RT05</h1>
+        <p>Jajanan Rasa Ningrat, Harga Merakyat ✨</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- KATEGORI MAKANAN -->
+        <h2 class="section-title">Camilan Premium</h2>
+        <div class="product-grid">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img class="product-image" src="basreng.jpeg" alt="Basreng Pedas">
+                <div class="product-info">
+                    <h3 class="product-title">Basreng Sultan Pedas Daun Jeruk</h3>
+                    <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 10px;">Kriuknya pas, pedasnya nampol dengan aroma daun jeruk segar.</p>
+                    <p class="product-price">Rp 5.000</p>
+                    <p class="wa-number">Tujuan WA: Hubungi Admin</p>
+                    <a href="https://wa.link/75zvxp" class="btn-order" target="_blank">Pesan Lewat WA</a>
+                </div>
+            </div>
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img class="product-image" src="makaroni.jpeg" alt="Makaroni Original">
+                <div class="product-info">
+                    <h3 class="product-title">Makaroni King Gurih Original</h3>
+                    <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 10px;">Rasa gurih asin klasik yang bikin mulut nggak bisa berhenti ngunyah.</p>
+                    <p class="product-price">Rp 5.000</p>
+                    <p class="wa-number">Tujuan WA: Hubungi Admin</p>
+                    <a href="https://wa.link/895u2r" class="btn-order" target="_blank">Pesan Lewat WA</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KATEGORI MINUMAN -->
+        <h2 class="section-title">Minuman Segar</h2>
+        <div class="product-grid">
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img class="product-image" src="Es Kopi Cappuccino.jpeg" alt="Es Kopi Cappuccino">
+                <div class="product-info">
+                    <h3 class="product-title">Es Kopi Cappuccino Sultan</h3>
+                    <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 10px;">Perpaduan kopi espresso premium dan susu yang creamy, bikin seger seharian.</p>
+                    <p class="product-price">Rp 7.000</p>
+                    <p class="wa-number">Tujuan WA: Hubungi Admin</p>
+                    <a href="https://wa.link/ejr2x8" class="btn-order" target="_blank">Pesan Lewat WA</a>
+                </div>
+            </div>
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img class="product-image" src="Es Teh Cup.jpeg" alt="Es Teh Cup.">
+                <div class="product-info">
+                    <h3 class="product-title">Es Teh Cup Jumbo</h3>
+                    <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 10px;">Es teh manis seduhan daun teh pilihan, super seger porsi puas.</p>
+                    <p class="product-price">Rp 3.000</p>
+                    <p class="wa-number">Tujuan WA: Hubungi Admin</p>
+                    <a href="https://wa.link/ow0uoe" class="btn-order" target="_blank">Pesan Lewat WA</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- INFORMASI PENGIRIMAN -->
+        <div class="info-box">
+            <h3>Sistem Pengiriman & Area Layanan</h3>
+            <p>
+                • <strong>Luar Daerah:</strong> Menerima pengiriman resmi via paket ekspedisi <strong>J&T</strong> dan <strong>JNE</strong>.<br>
+                • <strong>Area Sekitar:</strong> Khusus area <strong>Desa Kedawung dan sekitarnya</strong>, sistem COD/ketemuan dilakukan di luar area pemukiman (Lokasi aman ditentukan bersama via WhatsApp).
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
